@@ -1,0 +1,10 @@
+def sqrtN(n):
+    if n==0:
+        return 0
+    if n==1 or n==2:
+        return 1
+    for i in range(n):
+        if i*i==n:
+            return i
+        elif i*i>n:
+            return i-1
